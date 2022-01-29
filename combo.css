@@ -3,10 +3,9 @@ body {
   font-family: tahoma, "Bebas Neue", cursive;
 }
 .parent {
-  display: flex;
-  justify-content: center;
-  text-align: center
+  text-align: center;
 }
+
 button {
   display: flex;
   margin: auto;
@@ -59,77 +58,78 @@ button:hover::after {
   animation-timing-function: steps(2, end);
 }
 
-
 /* .numb {
 } */
 
+.message {
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(to right, #095fab 10%, #25abe8 50%, #57d75b 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
 
-	.message {
-        margin-bottom: 50px;
-		color: #fff;
-		font-size: 42px;
-		text-transform: uppercase;
-		font-weight: 700;
-		background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
-		background-size: auto auto;
-		background-clip: border-box;
-		background-size: 200% auto;
-		color: #fff;
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: textclip 1.5s linear infinite;
-		display: inline-block;
-	}
+/* .game {
+} */
 
-    @keyframes glitch {
-        0% {
-          clip-path: var(--slice-1);
-          transform: translate(-20px, -10px);
-        }
-        10% {
-          clip-path: var(--slice-3);
-          transform: translate(10px, 10px);
-        }
-        20% {
-          clip-path: var(--slice-1);
-          transform: translate(-10px, 10px);
-        }
-        30% {
-          clip-path: var(--slice-3);
-          transform: translate(0px, 5px);
-        }
-        40% {
-          clip-path: var(--slice-2);
-          transform: translate(-5px, 0px);
-        }
-        50% {
-          clip-path: var(--slice-3);
-          transform: translate(5px, 0px);
-        }
-        60% {
-          clip-path: var(--slice-4);
-          transform: translate(5px, 10px);
-        }
-        70% {
-          clip-path: var(--slice-2);
-          transform: translate(-10px, 10px);
-        }
-        80% {
-          clip-path: var(--slice-5);
-          transform: translate(20px, -10px);
-        }
-        90% {
-          clip-path: var(--slice-1);
-          transform: translate(-10px, 0px);
-        }
-        100% {
-          clip-path: var(--slice-1);
-          transform: translate(0);
-        }
-      }
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
 @keyframes textclip {
-	to {
-		background-position: 200% center;
-	}
+  to {
+    background-position: 200% center;
+  }
 }

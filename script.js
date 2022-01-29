@@ -50,7 +50,8 @@ function maker() {
     el.max = 9;
     el.min = 0;
     el.size = 1;
-    el.style.width = "50px";
+    el.style.width = "15vw";
+    el.style.height = "5vh";
     el.classList.add("numb");
     el.correct = Math.floor(Math.random() * 10);
     el.value = 0;
