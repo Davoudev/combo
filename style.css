@@ -67,7 +67,7 @@ button:hover::after {
   font-size: 42px;
   text-transform: uppercase;
   font-weight: 700;
-  background: linear-gradient(to right, #095fab 10%, #25abe8 50%, #57d75b 60%);
+  background: linear-gradient(to right, #ed4264 10%, #eb8fa1 50%, #ffedbc 60%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -79,8 +79,12 @@ button:hover::after {
   display: inline-block;
 }
 
-/* .game {
-} */
+.game input {
+  color: #f1204a;
+  font-size: large;
+  background-color: #ffedbc;
+  border:1px solid #ff013c ;
+}
 
 @keyframes glitch {
   0% {

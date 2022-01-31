@@ -17,7 +17,7 @@ function fun() {
   } else {
     score++;
 
-    message.innerHTML = "guess" + score;
+    message.innerHTML = "guess "+ score;
 
     const numbers = document.querySelectorAll(".numb");
 
@@ -26,14 +26,14 @@ function fun() {
     for (let i = 0; i < numbers.length; i++) {
       if (numbers[i].value == numbers[i].correct) {
         numbers[i].style.backgroundColor = "green";
-
+           
         wincondition++;
       } else {
         let color = numbers[i].value < numbers[i].correct ? "blue" : "red";
 
         numbers[i].style.backgroundColor = color;
 
-        numbers[i].style.color = "black";
+        numbers[i].style.color = "white";
       }
       if (wincondition == numbers[i].length) {
     
@@ -50,8 +50,9 @@ function maker() {
     el.max = 9;
     el.min = 0;
     el.size = 1;
-    el.style.width = "15vw";
+    el.style.width = "10vw";
     el.style.height = "5vh";
+    el.style.textAlign = "center";
     el.classList.add("numb");
     el.correct = Math.floor(Math.random() * 10);
     el.value = 0;
