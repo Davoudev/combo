@@ -57,10 +57,6 @@ button:hover::after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
-
-/* .numb {
-} */
-
 .message {
   margin-bottom: 50px;
   color: #fff;
