@@ -36,7 +36,6 @@ function fun() {
         numbers[i].style.color = "white";
       }
       if (wincondition == numbers[i].length) {
-    
       
       }
     }
